@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kenangan Kita Akan Selalu Di Kenang💕</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 30px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .city-block {
+      background: #fff;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .city-block:hover {
+      transform: scale(1.02);
+    }
+
+    .main-photo {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .city-name {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #d63384;
+      margin-bottom: 10px;
+    }
+
+    .city-btn {
+      background-color: #ff6f91;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      border: none;
+      font-size: 1rem;
+      font-family: 'Poppins', sans-serif;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .city-btn:hover {
+      background-color: #ff8fa3;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Kenangan Kita akan selalu  💖</h1>
+    <p>Jejak cinta kita di setiap kota... terima kasih untuk setiap momen indahnya sayang.</p>
+  </div>
+
+  <section class="gallery">
+    <div class="city-block">
+      <img src="images/surabaya-memorable.jpeg" alt="Kenangan Surabaya" class="main-photo" />
+      <div class="city-name">Surabaya</div>
+      <button class="city-btn" onclick="window.location.href='surabaya.html'">Lihat Kenangan Surabaya</button>
+    </div>
+
+    <div class="city-block">
+      <img src="images/bandung-memorable.jpeg" alt="Kenangan Bandung" class="main-photo" />
+      <div class="city-name">Bandung</div>
+      <button class="city-btn" onclick="window.location.href='bandung.html'">Lihat Kenangan Bandung</button>
+    </div>
+
+    <div class="city-block">
+      <img src="images/karawang-memorable.jpeg" alt="Kenangan Karawang" class="main-photo" />
+      <div class="city-name">Karawang</div>
+      <button class="city-btn" onclick="window.location.href='karawang.html'">Lihat Kenangan Karawang</button>
+    </div>
+    
+  </section>
+
+  <div class="footer" style="margin-top: 30px;">
+    <button class="music-btn" onclick="window.location.href='index.html'">🔙 Kembali ke Halaman Utama</button>
+    <button class="music-btn" onclick="window.location.href='next.html'">➡️ Klik ini kalau mau lihat sesuatu yang indah</button>
+  </div>
+
+
+
+  <div class="heart-animation"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

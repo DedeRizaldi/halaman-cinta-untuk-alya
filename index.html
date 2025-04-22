@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Untuk Kamu, Alya Tercinta 💖</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <style>
+    .content-container {
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 20px;
+      padding: 30px;
+      max-width: 700px;
+      margin: 30px auto;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .photo img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid #ff9a9e;
+      box-shadow: 0 8px 20px rgba(255, 105, 180, 0.3);
+    }
+
+    .romantic-quote {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #e91e63;
+      margin-top: 25px;
+      background: #fff0f5;
+      padding: 15px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+
+    .action-buttons {
+      margin-top: 30px;
+    }
+
+    .heart-animation, .falling-photos {
+      z-index: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Untuk Kamu, Cintaku Alya 💖</h1>
+    <div class="content-container">
+      <p>Halaman ini aku buat spesial untuk kamu, sayangku. Setiap detik yang kita lalui, setiap senyum dan pelukanmu, semuanya terekam di sini. Jangan pernah berubah ya, karena kamu adalah alasan aku bahagia.</p>
+
+      <div class="photo">
+        <img src="images/pacar1.jpeg" alt="Foto Pacar" id="photo" />
+      </div>
+
+      <blockquote class="romantic-quote">
+        “Dalam setiap detik yang berlalu, kamu selalu ada di pikiranku. Terima kasih sudah hadir dalam hidupku, sayangku.”
+      </blockquote>
+
+      <div class="action-buttons">
+        <a href="kenangan-kita.html" class="button">💌 Lihat Kenangan Kita</a>
+        <p id="music-info">Klik tombol di bawah untuk dengarkan lagu spesial kita 🎶</p>
+        <button onclick="toggleMusic()" class="music-btn" id="music-button">
+          <span id="play-icon">🎵 Mainkan Musik</span>
+          <span id="pause-icon" style="display: none;">⏸️ Pause Musik</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="falling-photos"></div>
+  <div class="heart-animation">
+    <span class="heart">💖</span>
+    <span class="heart">💖</span>
+    <span class="heart">💖</span>
+    <span class="heart">💖</span>
+  </div>
+
+  <audio id="bg-music" autoplay loop>
+    <source src="music/love.mp3" type="audio/mp3" />
+    Browser kamu tidak mendukung pemutar audio.
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
